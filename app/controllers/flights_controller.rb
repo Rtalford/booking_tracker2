@@ -8,7 +8,12 @@ class FlightsController < ApplicationController
   end
 
   def create
-    @flight = 
+    @flight = Flight.new(flight_params)
+    if @flight.save 
+      redirect_to flight_path(@flight)
+    else
+      render :new
+    end 
   end 
 
   def show
