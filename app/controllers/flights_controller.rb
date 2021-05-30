@@ -30,6 +30,9 @@ class FlightsController < ApplicationController
   end 
 
   def destroy
+    @flight = Flight.find_by_id(params[:id])
+    @flight.delete 
+    redirect_to flights_path
   end
 
   private 

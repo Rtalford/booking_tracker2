@@ -4,3 +4,5 @@
 <%= @flight.return_date %>
 <%= @flight.depart_date %>
 <%= @flight.airline.name %>
+
+<%= link_to('delete', flights_path(@flight), method: 'delete' %>
