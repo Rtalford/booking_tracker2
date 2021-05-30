@@ -21,9 +21,12 @@ class FlightsController < ApplicationController
   end
 
   def edit
+    @flight = Flight.find_by_id(params[:id])
   end
 
   def update
+    @flight = Flight.find_by_id(params[:id])
+    @flight.update(params[:flight])
   end 
 
   def destroy
