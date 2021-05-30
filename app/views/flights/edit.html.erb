@@ -1,2 +1,22 @@
 <h1>Flights#edit</h1>
 <p>Find me in app/views/flights/edit.html.erb</p>
+
+<h3>Form</h3>
+
+<%= form_with model: @flight do |f| %>
+
+    <%= f.label :depart_date %> 
+    <%= f.datetime_field :depart_date %> 
+
+    <%= f.label :return_date %> 
+    <%= f.datetime_field :return_date %> 
+
+    <%= f.label :airline_id %> 
+    <%= f.number_field :airline_id %> 
+
+    <%= f.label :user_id %> 
+    <%= f.number_field :user_id %> 
+
+    <%= f.submit %>
+
+<% end >%
