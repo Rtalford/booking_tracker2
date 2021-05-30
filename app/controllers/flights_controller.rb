@@ -4,10 +4,11 @@ class FlightsController < ApplicationController
   end
 
   def new
-    @flights = Flight.new
+    @flight = Flight.new
   end
 
   def create
+    @flight = 
   end 
 
   def show
@@ -21,5 +22,11 @@ class FlightsController < ApplicationController
 
   def destroy
   end
+
+  private 
+
+  def flight_params
+    params.require(:flight).permit(:depart_date, :return_date, :airline_id, :user_id)
+  end 
 
 end
