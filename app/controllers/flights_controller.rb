@@ -35,7 +35,7 @@ class FlightsController < ApplicationController
     redirect_to flights_path
   end
 
-  private 
+private 
 
   def flight_params
     params.require(:flight).permit(:depart_date, :return_date, :airline_id, :user_id)
