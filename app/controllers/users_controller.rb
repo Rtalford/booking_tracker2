@@ -16,7 +16,12 @@ class UsersController < ApplicationController
     end 
   end
 
+  def show
+    @user = User.find_by_id(params[:id])
+  end
+
   def edit
+    @user = User.find_by_id(params[:id])
   end
 
   def update
@@ -28,11 +33,13 @@ class UsersController < ApplicationController
     end 
   end
 
-  def delete
+  def destroy
+    @user = User.find_by_id(params[:id])
+    @user.delete 
+    redirect_to users_path
   end
 
-  def show
-  end
+  
 
   private 
 
