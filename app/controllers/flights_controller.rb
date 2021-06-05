@@ -1,10 +1,10 @@
 class FlightsController < ApplicationController
   def index
     if params[:airline_id]
-      @airline = airline.findy_by(params[:airlines])
-      @flights = @airline.flights
+      @airline = Airline.find_by(params[:airline_id])
+      @flights = @Airline.flights
     else
-      @flights = flights.all
+      @flight = Flight.all
     end 
   end
 

@@ -36,11 +36,10 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find_by_id(params[:id])
     @user.delete 
-    redirect_to users_path
+    redirect_to user_path
   end
 
   
-
   private 
 
   def user_params
@@ -48,4 +47,4 @@ class UsersController < ApplicationController
   end 
 
 end
-end
+
