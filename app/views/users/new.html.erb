@@ -1,5 +1,5 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<h1>New Booking</h1>
+<p>Please fill out your information for a new booking</p>
 
 
 <% if @user.errors.any? %>
@@ -20,7 +20,7 @@
     <%= f.text_field :email %>
     <br>
     <%= f.label :password %>
-    <%= f.pasword_field :password %>
+    <%= f.password_field :password %>
     <br>
     <%= f.submit "Create Booking" %>
 
