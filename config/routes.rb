@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :users 
   
   resources :airlines do
-   resources :flights
+   resources :flights, only: [:index, :new, :create]
   end 
 
   resources :flights
