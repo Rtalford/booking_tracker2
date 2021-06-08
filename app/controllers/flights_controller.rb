@@ -28,6 +28,7 @@ class FlightsController < ApplicationController
       else
         render :new
       end
+    end 
   end
     
 
