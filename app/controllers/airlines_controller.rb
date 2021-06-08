@@ -10,7 +10,7 @@ class AirlinesController < ApplicationController
       def create
         @airline = airline.new(user_airline)
         if @airline.save
-          redirect_to user_path(@user)
+          redirect_to airlines_path(@airline)
         else 
           render :new
         end 
@@ -27,7 +27,7 @@ class AirlinesController < ApplicationController
       def update
         @airline = airline.find(params[:id])
         if @airline.update(params)
-          redirect_to user_path
+          redirect_to airline_path
         else
           render :edit
         end 
@@ -36,7 +36,7 @@ class AirlinesController < ApplicationController
       def destroy
         @airline = Airline.find_by_id(params[:id])
         @airline.delete 
-        redirect_to user_path
+        redirect_to airline_path
       end
     
       
