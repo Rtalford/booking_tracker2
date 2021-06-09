@@ -1,12 +1,8 @@
 <h1>Current Flights</h1>
 <p>Find me in app/views/flights/index.html.erb</p>
 
-<% @flight.each do |f| %>
-
-<p>
+<% @flights.each do |f| %>
     Return_date: <%= f.return_date %>
-    Depart_date: <%= f. depart_date %> 
+    Depart_date: <%= f.depart_date %> 
     Airline: <%= f.airline.name %> 
-</p>
-
 <% end %>

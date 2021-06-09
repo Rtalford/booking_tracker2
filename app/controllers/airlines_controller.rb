@@ -4,7 +4,7 @@ class AirlinesController < ApplicationController
       end
     
       def new
-        @airlines = Airline.new
+        @airline = Airline.new
       end
     
       def create

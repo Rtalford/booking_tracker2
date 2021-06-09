@@ -4,7 +4,7 @@ class FlightsController < ApplicationController
       @airline = Airline.find_by(params[:airline_id])
       @flights = @Airline.flights
     else
-      @flight = Flight.all
+      @flights = Flight.all
     end 
   end
 
