@@ -12,6 +12,8 @@ User.create([
     {email: "Thelma@gmail.com", first_name: "Thelma", last_name: "J", password: "Thelma1"},
 ])
 
-Organization.create([
-    {name: "Delta", name: "American_Airlines", name: "Southwestern_Airlines"}
+Airline.create([
+    {name: "Delta"},
+    {name: "American_Airlines"},
+    {name: "Southwestern_Airlines"},
 ])
