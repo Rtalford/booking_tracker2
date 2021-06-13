@@ -1,6 +1,6 @@
 class AirlinesController < ApplicationController
     def index
-        @airlines = Airline.airlines_flights
+        @airlines = Airline.airs_flights
       end
     
       def new
