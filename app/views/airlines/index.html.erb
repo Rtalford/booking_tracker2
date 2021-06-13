@@ -1,0 +1,9 @@
+<h1> Airlines index <h1>
+
+<%= @airlines.each do |air| %>
+
+    <%= air.name %>
+    <% air.flights.each do |flight| %>
+    <%= flights.depart_date %> - <%= flights.return_date %>
+    <%= end %>
+
