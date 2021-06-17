@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  
+  #make a welcome page
   resources :users 
 
   resources :flights

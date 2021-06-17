@@ -22,8 +22,8 @@ User.create(email: "Florence@gmail.com", first_name: "Florence", last_name: "C",
 User.create(email: "Francis@gmail.com", first_name: "Francis", last_name: "F", password: "Francis1")
 User.create(email: "Thelma@gmail.com", first_name: "Thelma", last_name: "J", password: "Thelma1")
 
-Airline.create(name: “American_Airlines”)
-Airline.create(name: “Delta”)
-Airline.create(name: “Southwestern_Airlines”)
+Airline.create(name: "American_Airlines")
+Airline.create(name: "Delta")
+Airline.create(name: "Southwestern_Airlines")
 
 
